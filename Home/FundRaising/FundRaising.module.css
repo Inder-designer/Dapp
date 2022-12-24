@@ -1,0 +1,42 @@
+.section{
+    background-color:#DAECE8;
+    margin: 50px 0px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+.heading{
+    font-weight: 700;
+font-size: 32.3888px;
+font-family: 'Inter', sans-serif;
+line-height: 40px;
+}
+.columstyle{
+    border-radius: 8px;
+    max-width: 240px;
+    height: auto;
+}
+.viewButton{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.raised{
+    color:#009751;
+}
+.progressBar{
+    background-color: #009751;
+}
+.viewAll{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    width: 170px;
+    height: 50px;
+}
+@media (max-width:  767.98px) { 
+    /* .section{
+        margin: 430px 0px ;
+    } */
+ }

@@ -1,0 +1,36 @@
+.section{
+    background-color: black;
+    padding: 50px 0px;
+    text-align: center;
+   
+}
+.heading{
+    color: white;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+.paragraph{
+    color: white;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+}
+.columnStyle{
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 10px;
+}
+.title{
+font-family: 'Source Sans Pro', 'sans-serif';
+font-weight: 700;
+color: white;
+font-size: 21.06px;
+z-index: 1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+line-height: 25px;
+}

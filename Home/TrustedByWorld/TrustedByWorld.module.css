@@ -1,0 +1,28 @@
+.section{
+    background: url('../../public/Group 427319493.png');
+    background-size: cover;
+    padding: 50px 0px;
+}
+.heading{
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+.quote{
+font-family: 'Source Sans Pro', sans-serif;
+font-weight:600;
+font-size: 21.06px;
+margin-top: 52px;
+}
+.paragraph{
+font-family:'Source Sans Pro', sans-serif;
+font-weight:400;
+font-size: 18px;
+}
+.lastParagraph{
+font-family:'Source Sans Pro', sans-serif;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+}

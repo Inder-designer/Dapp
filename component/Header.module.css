@@ -1,0 +1,11 @@
+.list{
+    font-weight: 500;
+    font-size: 14px;
+}
+.link{
+font-weight: 500;
+font-size: 14px;
+font-family: 'Inter', sans-serif;
+color: black;
+line-height: 24px;
+}

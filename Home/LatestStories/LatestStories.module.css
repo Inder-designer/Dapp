@@ -1,0 +1,32 @@
+.section{
+    background-color: black;
+    margin: 50px 0 0 0px;
+    text-align: center;
+    padding: 50px 0px;
+    font-family: 'Inter', sans-serif;
+}
+.heading{
+    color: white;
+    font-weight: 700;
+font-size: 32.3888px;
+line-height: 40px;
+}
+.content{
+    color: white;
+   max-width: 456px;
+   width: auto;
+    margin:20px auto;
+    font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+    text-align: center;
+}
+.card{
+    border-radius: 8px;
+}
+.cardText{
+font-weight: 400;
+font-size: 14px;
+line-height: 25px;
+text-align: left;
+}

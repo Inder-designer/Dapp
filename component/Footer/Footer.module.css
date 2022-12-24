@@ -1,0 +1,76 @@
+.FooterSection{
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+    font-size: 12.0614px;
+}
+.paragraph1{
+font-family: 'Poppins', sans-serif;
+font-weight:400;
+font-size: 10px;
+margin-top: 15px;
+Width:280px;
+line-height: 16px;
+}
+.heading1{
+    font-family: 'SVN-Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 13.7844px;
+    line-height: 17px;                                            
+}
+.heading2{
+font-style: normal;
+font-family: 'SVN-Gilroy', sans-serif;
+font-weight: 600;
+font-size: 13.7844px;
+margin-top:2px;
+margin-left:30px;
+line-height: 16px;
+
+}
+.heading3{
+    font-family: 'SVN-Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 13.7844px;
+    line-height: 17px;
+}
+.row{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.input{
+    border: 1px solid #FFFFFF;
+border-radius: 4.68794px;
+width: 201.6px;
+font-family: 'Poppins', sans-serif;
+background: transparent;
+height: 37.91px;
+
+}
+.contact{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.input::placeholder{
+    color: white;
+}
+.subscribeButton{
+    background: linear-gradient(95.39deg, #30AA72 -1.16%, #009451 97.84%);
+border-radius:4px;
+width: 95px;
+font-family: 'Poppins', sans-serif;
+height: 40px;
+color: white;
+}
+.unorderedList{
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+.unorderedList2{
+list-style-type:none;
+font-family: 'Poppins', sans-serif;
+margin-top: 25px;
+}
+.list{
+    padding-top: 16px;
+}

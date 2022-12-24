@@ -1,0 +1,59 @@
+.section{
+    background-color:#DAECE8;
+    padding: 50px 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+.title{
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+}
+.subTitle{
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+}
+.heading{
+    font-weight: 700;
+    font-weight: 700;
+font-size: 21.06px;
+}
+.paragraph{
+    text-align: left;
+    width: 410px;
+    margin-bottom: 0;
+    height: 48px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+.Count{
+    background: #087E67;
+    box-shadow: 0px 32px 54px rgba(47, 128, 237, 0.15);
+    border-radius: 4px;
+    padding: 6px 13px;
+    color: white;
+    }
+ .countText{
+        margin-left: 10px;
+        font-weight: 700;
+    font-size: 21.06px;
+    line-height: 25px;
+    }
+.paragraph1{
+width: 456px;
+text-align: left;
+font-weight: 400;
+font-size: 18px;
+height: 98px;
+}
+.Createbutton{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px ;
+    width: 170x;
+    height: 50px;
+    font-size: 16px; 
+}

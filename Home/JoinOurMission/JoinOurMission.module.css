@@ -1,0 +1,33 @@
+.section{
+    padding: 50px 0px;
+    background-color: #DAECE8;
+    text-align: left;
+}
+.heading{
+   font-family:  'Source Sans Pro', 'sans-serif';
+   font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+}
+.paragraph{
+font-weight:400;
+width: 692px;
+font-family:  'Source Sans Pro', 'sans-serif';
+font-size: 18px;
+line-height: 25px;
+}
+.button{
+    background: #000000;
+border-radius: 4px;
+width: 150px;
+color: white;
+font-family: 'Inter', sans-serif;
+height: 40px;
+}
+.input{
+    width: 200px;
+    border: 1px solid #999999;
+border-radius: 4px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+}
