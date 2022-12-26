@@ -11,7 +11,7 @@ const index = () => {
   return (
     <div >
       <StartDonating/>
-      <FundRaising/>
+      <FundRaising />
       <HowItWork/>
       <LatestStories/>
       <StartCampaign/>

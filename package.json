@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@metamask/detect-provider": "^2.0.0",
     "@openzeppelin/contracts": "^4.8.0",
     "@truffle/hdwallet-provider": "^2.1.4",
     "axios": "^1.2.1",
@@ -21,7 +22,7 @@
     "react-icons": "^4.7.1",
     "react-toastify": "^9.1.1",
     "truffle": "^5.7.1",
-    "web3": "^1.8.1",
+    "web3": "^1.7.4",
     "web3modal": "^1.9.10",
     "yup": "^0.32.11"
   },

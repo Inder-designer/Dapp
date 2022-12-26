@@ -32,12 +32,27 @@ const Create = () => {
         title:Yup.string().required("**Required!"),
         type:Yup.string().required("Please Select"),
         comment:Yup.string().required("Please Enter comment Here"),
-        beneficiary:Yup.string().required("**Required!"),
+        beneficiary:Yup.string().matches(
+          (/^(0x)?[0-9a-f]/)).min(40,'length should be 40 characters' )
+          .required("**Required!"),
         goalAmount:Yup.string().required("Please Enter GoalAmount"),
-        twitterLink:Yup.string().required("Please Enter TwitterLink"),
-        faceBookLink:Yup.string().required("Please Enter faceBookLink"),
-        linkedinLink:Yup.string().required("Please Enter linkedInLink"),
-        videoLink:Yup.string().required("Please Enter VideoLink"),
+        twitterLink:Yup.string().matches(
+          /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
+          'Enter correct url!'
+      ).required("Please Enter TwitterLink"),
+
+      faceBookLink:Yup.string().matches(
+          /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
+          'Enter correct url!'
+      ).required("Please Enter faceBookLink"),
+        linkedinLink:Yup.string().matches(
+          /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
+          'Enter correct url!'
+      ).required("Please Enter linkedInLink"),
+        videoLink:Yup.string().matches(
+          /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
+          'Enter correct url!'
+      ).required("Please Enter VideoLink"),
 })
 useEffect(() => {
     init();
@@ -307,7 +322,7 @@ try {
                 </div>
             </div>
             <div className='text-center'>
-            <button type="submit" className={style.create}>Create</button>
+            <button type="submit" className={`my-5 ${style.create}`}>Create</button>
             </div>
             <Image src ={IMAGES.Create}/>
         </Form>

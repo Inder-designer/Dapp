@@ -1,8 +1,64 @@
-import React from 'react'
+import React,{useContext,useState,useEffect} from 'react'
 import style from './FundRaising.module.css'
 import Image from 'next/image'
 import Images from '../../public/Images'
+import {ContextData} from '../../Context/DataContext';
+import Web3 from 'web3';
+import detectEthereumProvider from '@metamask/detect-provider';
+import FundraiserContract from '../../build/contracts/Fundraiser.json';
 const FundRaising = () => {
+  const[contract,setContract]=useState([]);
+  const[fundName,setFundName]=useState(null);
+  const[data,setData]=useState([])
+  const [image,setImage]=useState(null);
+  const [goalAmount,setGoalAmount]=useState(null);
+  const[description,setDescription]=useState("");
+const {funds,fundRaiser}=useContext(ContextData)
+
+useEffect(() => {
+  funds.map((item,i)=>{
+    console.log(item,'funDraiser');
+    if (item) {
+      init(item);
+    }
+  })
+ 
+}, []);
+const init = async (fundRaiser) => {
+  try {
+    const fund = fundRaiser;
+    console.log(fund,'-------------fund---------------')
+    const provider = await detectEthereumProvider();
+    const web3 = new Web3(provider);
+    const account = await web3.eth.getAccounts();
+    console.log('accounts---', account);
+    const instance = new web3.eth.Contract(FundraiserContract.abi, fund);
+    // setWeb3(web3);
+    setContract(instance);
+    // setAccounts(account);
+    // console.log('----account0--', accounts[0]);
+    setFundName(await instance.methods.name().call());
+    setImage(await instance.methods.image().call());
+   
+    // setFaceBookLink(await instance.methods.facebookLink().call())
+    // setlinkedINLink(await instance.methods.linkedinLink().call())
+    // setTwitterLink(await instance.methods.twitterLink().call())
+    setDescription(await instance.methods.description().call());
+    setGoalAmount(await instance.methods.goalAmount().call());
+    setData(...data,[
+    fundName,image,description,goalAmount,
+    ])
+    // console.log('---------data--------');
+console.log(await instance.methods.name().call());
+console.log(await instance.methods.image().call())
+console.log(description);
+console.log(goalAmount);
+console.log(image);
+   } catch (error) {
+    console.error(error);
+  }
+};
+console.log(data,'data');
   const cardData=[{
     image:Images.cardImg1,
     title:"Black Girls Code",
@@ -72,7 +128,7 @@ const FundRaising = () => {
         <div className="card p-3" >
   <Image src={item.image} class="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">{item.title}</h5>
+    <h5 className="card-title">{fundName}</h5>
     <div className={`progress ` }>
   <div className={`progress-bar w-75 ${style.progressBar}`} role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
